@@ -4,13 +4,13 @@
 
 #!/bin/bash
 
-gcc -c $1 -o $2
+gcc $1 -o $2
 
-if [! -f "$2"]
-then "Error while compiling "$1""
+#if [! -f "$2"]
+#then "Error while compiling "$1""
 
-else
-chmod u+rwx ./$2
-./$2;
-fi
+#else
+chmod +x $2
+./$2
+#fi
 
