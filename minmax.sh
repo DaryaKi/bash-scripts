@@ -3,5 +3,4 @@
 #$3 - directory name
 #!/bin/bash
 
-find $3 -type f -size +$2k -size -$1k -print
-
+find $3 -type f -size +$1k -size -$2k -print | tail -20 
