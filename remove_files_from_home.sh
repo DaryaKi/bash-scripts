@@ -4,6 +4,8 @@
 
 #!/bin/bash
 
+#asterics is recognized as script name...it was bypassed by the follwoing condition
+
 if [ -z "$1" -o "$1" = "$(basename $0)" ];
 then
 echo "Nothing was removed! Please try again"
